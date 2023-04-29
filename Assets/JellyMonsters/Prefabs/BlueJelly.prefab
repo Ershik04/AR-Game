@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 9500000}
   - component: {fileID: 1212229726467695236}
+  - component: {fileID: 5927206329030022017}
   m_Layer: 0
   m_Name: BlueJelly
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +88,7 @@ MeshRenderer:
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &9500000
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,7 +105,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1212229726467695236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,3 +119,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76de220bb36eb949962f5a97dffde54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particles: {fileID: 6087520338895809069, guid: 9f99abbaba90587408acebd170261d23, type: 3}
+--- !u!135 &5927206329030022017
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.46578962
+  m_Center: {x: -0.0021080524, y: 0.017064482, z: -0.024047881}
