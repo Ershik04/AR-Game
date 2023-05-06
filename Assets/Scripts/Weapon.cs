@@ -16,9 +16,12 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount > 0)
         {
-            Bullet bullet = Instantiate(_bullet, _shootPoint.transform.position, transform.rotation);
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Bullet bullet = Instantiate(_bullet, _shootPoint.transform.position, transform.rotation);
+            }
         }
     }
 }
